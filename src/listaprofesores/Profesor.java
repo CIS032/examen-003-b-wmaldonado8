@@ -71,6 +71,10 @@ public abstract class Profesor {
 
     
     public abstract int horasComplementarias();
+
+    public void setHorasClase(String horas_trabajo) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

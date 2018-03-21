@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
  */
 public class ListaProfesores {
 
-    ArrayList<Profesor> lista = new ArrayList<>();
+    static ArrayList<Profesor> lista = new ArrayList<>();
 
     public void agregar(Profesor profesor) {
         lista.add(profesor);
@@ -38,7 +38,7 @@ public class ListaProfesores {
 
     public void grabar() {
         try {
-            FileWriter FILE = new FileWriter("C://Users//OrixStranger//Documents//NetBeansProjects//ListaProfesores//archivo.txt");
+            FileWriter FILE = new FileWriter("archivo.txt");
             PrintWriter pr = new PrintWriter(FILE, true);
             for (Profesor profesor : lista) {
                 if (profesor instanceof ProfesorTiempoParcial) {
